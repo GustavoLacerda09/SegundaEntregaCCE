@@ -1,4 +1,7 @@
-n,o,p,q=0   
+n=0
+o=0 
+p=0 
+q=0   
 class Materia():
     def __init__(self, materia = None):
         self.materia = materia
@@ -54,6 +57,13 @@ class Turma():
         return self.turma
     def mostrar():
         print (D)
+
+    def designar(self, turma, professor):
+        self.professor = professor
+        self.turma = turma
+        Professor.mostrar()
+        Turma.mostrar()
+        print ("Para designar um professor para uma nova turma digite designar(turma, nome_do_professor): ")
 D=[None]
 d = Turma()
 D[q]= d.cadastrar()
