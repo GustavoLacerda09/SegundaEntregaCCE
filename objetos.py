@@ -12,10 +12,13 @@ class Materia():
         return self.materia
     def mostrar():
         print (A)
-A=[None]
+A=[]
+lista= [None]
 a = Materia()
-A[n]= a.cadastrar()
-n= n+1
+lista[n] = a.cadastrar()
+n=n+1
+A.append(lista)
+
     
 class Professor(): 
     def __init__(self, professor = None):
