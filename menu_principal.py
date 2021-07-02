@@ -18,13 +18,16 @@ def menu_principal():
     x = int (input())
 
     if x==1: 
-        Materia.cadastrar()
-        menu_principal()
+       materia = Materia()
+       materia.cadastrar()
+       menu_principal()
     elif x==2: 
-        Professor.cadastrar()
+        professor = Professor()
+        professor.cadastrar()
         menu_principal()
     elif x==3: 
-        Aluno.cadastrar()
+        aluno = Aluno()
+        aluno.cadastrar()
         menu_principal()
     elif x==4:
          Materia.mostrar()

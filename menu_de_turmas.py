@@ -1,5 +1,4 @@
 from objetos import Professor, Turma
-#from menu_principal import menu_principal
 
 def menu_de_turmas():
     print ('************************************')
@@ -18,10 +17,12 @@ def menu_de_turmas():
     y = int (input())
 
     if y==1: 
-        Turma.cadastrar
+        turma = Turma()
+        turma.cadastrar
         menu_de_turmas()
     elif y==2: 
-        Turma.designar()
+        turma = Turma()
+        turma.designar()
         menu_de_turmas()
     elif y==3: 
         print ("3 - Adicionar alunos em uma turma")
