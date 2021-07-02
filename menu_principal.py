@@ -19,18 +19,25 @@ def menu_principal():
 
     if x==1: 
         Materia.cadastrar()
+        menu_principal()
     elif x==2: 
         Professor.cadastrar()
+        menu_principal()
     elif x==3: 
         Aluno.cadastrar()
+        menu_principal()
     elif x==4:
          Materia.mostrar()
+         menu_principal()
     elif x==5:
         Professor.mostrar()
+        menu_principal()
     elif x==6:
         Aluno.mostrar()
+        menu_principal()
     elif x==7:
         menu_de_turmas()
+    
     elif x==8:
         return 0
     else :

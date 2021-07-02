@@ -1,4 +1,5 @@
-from menu_principal import menu_principal
+from objetos import Professor, Turma
+#from menu_principal import menu_principal
 
 def menu_de_turmas():
     print ('************************************')
@@ -17,21 +18,28 @@ def menu_de_turmas():
     y = int (input())
 
     if y==1: 
-        print ("1 - Cadastro de uma nova matéria")
+        Turma.cadastrar
+        menu_de_turmas()
     elif y==2: 
-        print ("2 - Cadastro de um novo professor")
+        Turma.designar()
+        menu_de_turmas()
     elif y==3: 
-        print ("3 - Cadastro de um novo aluno")
+        print ("3 - Adicionar alunos em uma turma")
+        menu_de_turmas()
     elif y==4:
-         print ("4 - Mostrar todos as matérias cadastradas") 
+         print ("4 - Remover alunos de uma turma") 
+         menu_de_turmas()
     elif y==5:
-        print ("5 - Mostrar todos os professores cadastrados")
+        print ("5 - Dar a nota final")
+        menu_de_turmas()
     elif y==6:
-        print ("6 - Mostrar todos os alunos cadastrados")
+        print ("6 - Mostrar todos os alunos de uma turma")
+        menu_de_turmas()
     elif y==7:
-        print ("7 - Abrir Menu de Turmas")
+        Turma.mostrar
+        menu_de_turmas()
     elif y==8:
-         menu_principal()
+         return
     else :
         print('Opção Inválida: [Enter]')
-        menu_principal()
+        return
