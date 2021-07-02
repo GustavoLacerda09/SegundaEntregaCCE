@@ -6,8 +6,8 @@ programa deve permitir que o usuário realize as funções através de um menu q
 siga o seguinte modelo:
 
 * MENU Principal
-- Cadastro de uma nova matéria
-- Cadastro de um novo professor
+- Cadastro de uma nova matéria 
+- Cadastro de um novo professor 
 - Cadastro de um novo aluno
 - Mostrar todos as matérias cadastradas
 - Mostrar todos os professores cadastrados
